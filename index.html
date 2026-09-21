@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#273f35">
+  <meta name="description" content="하루 한 분을 위한 미용실 예약 안내. 원하는 날짜와 시간, 시술 내용을 이메일로 알려주세요. 회신으로 예약 확정을 안내드립니다.">
+  <title>살롱 예약 안내 — 하루, 한 분의 시간</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="살롱 예약 안내 홈"><span class="brand-mark" aria-hidden="true">s.</span><span>SALON<span class="brand-sub">예약 안내</span></span></a>
+    <nav aria-label="주요 메뉴"><a href="#guide">예약 방법</a><a href="#faq">자주 묻는 질문</a><a class="nav-cta" href="#inquiry">예약 문의 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ONE DAY, ONE GUEST</p>
+        <h1 id="hero-title">하루,<br>한 분의 <em>시간.</em></h1>
+        <p class="hero-description">원하는 날, 원하는 스타일.<br>당신의 다음 방문을 함께 준비합니다.</p>
+        <a class="button primary" href="#inquiry">내 예약 문의하기 <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">하루 한 분 예약 · 이메일 회신으로 확정</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 560 620" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#e3e3d6"/><stop offset="1" stop-color="#b7bfaa"/></linearGradient>
+            <linearGradient id="mirror" x2="1" y2="1"><stop stop-color="#b9c7b8"/><stop offset=".5" stop-color="#dde2d5"/><stop offset="1" stop-color="#99aa99"/></linearGradient>
+            <linearGradient id="chair" x2="0" y2="1"><stop stop-color="#425c4d"/><stop offset="1" stop-color="#243f33"/></linearGradient>
+            <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+          </defs>
+          <path fill="url(#wall)" d="M0 0h560v620H0z"/>
+          <path fill="#f4eee0" opacity=".58" d="M360 0h85L60 505H0v-68zM480 0h40L135 505H95z"/>
+          <path d="M0 506h560v114H0z" fill="#c3c7b4"/>
+          <path d="M0 506h560" stroke="#a3ad97"/>
+          <path d="M141 341V180a139 139 0 0 1 278 0v161" fill="none" stroke="#a3a98f" stroke-width="14"/>
+          <path d="M150 337V180a130 130 0 0 1 260 0v157z" fill="url(#mirror)"/>
+          <path d="M177 315V180a103 103 0 0 1 103-103" stroke="#eef0e3" stroke-width="2" fill="none" opacity=".65"/>
+          <path d="M332 57l-132 280h34L365 73" fill="#fffdf1" opacity=".17"/>
+          <rect x="117" y="336" width="321" height="12" rx="3" fill="#9b8160"/>
+          <rect x="130" y="348" width="294" height="18" fill="#b59973"/>
+          <path d="M390 301h17v34h-17z" fill="#536954"/><path d="M397 294h4v8h-4zM395 289h13v5h-13z" fill="#394f40"/>
+          <rect x="362" y="314" width="20" height="21" rx="5" fill="#e6deca"/>
+          <ellipse cx="278" cy="560" rx="120" ry="16" fill="#73816b" opacity=".22" filter="url(#soft)"/>
+          <ellipse cx="280" cy="555" rx="71" ry="9" fill="#899082"/>
+          <rect x="269" y="461" width="22" height="92" rx="4" fill="#a9ae9e"/>
+          <path d="M273 476h14v62h-14z" fill="#dbdece"/>
+          <path d="M190 361q0-26 26-26h129q26 0 26 26v81H190z" fill="url(#chair)"/>
+          <path d="M201 360q0-15 16-15h127q16 0 16 15" fill="none" stroke="#84937a" opacity=".55"/>
+          <rect x="190" y="421" width="181" height="49" rx="17" fill="#354f3f"/>
+          <rect x="202" y="427" width="157" height="21" rx="9" fill="#526949"/>
+          <path d="M189 433h-18v-44M371 433h18v-44" stroke="#a3aa96" stroke-width="9" fill="none"/>
+          <rect x="157" y="379" width="40" height="14" rx="6" fill="#2c4437"/><rect x="365" y="379" width="40" height="14" rx="6" fill="#2c4437"/>
+          <path d="M249 470v31h65v-31" stroke="#9a9f8e" stroke-width="7" fill="none"/>
+          <rect x="238" y="497" width="87" height="10" rx="4" fill="#53634e"/>
+          <path d="M473 451q-24-109 5-204M474 369q27-56 51-71M470 337q-24-59-48-81" stroke="#6e7f58" stroke-width="3" fill="none"/>
+          <g fill="#667d51"><ellipse cx="480" cy="263" rx="12" ry="39" transform="rotate(20 480 263)"/><ellipse cx="501" cy="328" rx="12" ry="37" transform="rotate(46 501 328)"/><ellipse cx="441" cy="288" rx="12" ry="35" transform="rotate(-36 441 288)"/><ellipse cx="459" cy="369" rx="12" ry="32" transform="rotate(-35 459 369)"/></g>
+          <path d="M444 432h61l-9 79h-43z" fill="#d9d6bf"/><path d="M444 432h61" stroke="#b6bba1" stroke-width="5"/>
+          <path d="M74 0v113" stroke="#76816b" stroke-width="2"/><path d="M50 144a24 24 0 0 1 48 0z" fill="#f7efd8"/><path d="M47 144h54" stroke="#d8d5bf" stroke-width="3"/>
+        </svg>
+        <div class="art-caption"><span>A MOMENT FOR YOU</span><span>01 / SALON</span></div>
+        <div class="art-seal">하루 한 분<br><span>BY APPOINTMENT</span></div>
+      </div>
+    </section>
+    <section id="guide" class="guide wrap section" aria-labelledby="guide-title">
+      <div class="section-heading"><p class="eyebrow">HOW TO BOOK</p><h2 id="guide-title">예약은 이렇게 진행돼요.</h2><p>원하는 일정을 알려주시면 이메일로 확인해 드립니다.</p></div>
+      <div class="steps">
+        <article><span class="step-number">01</span><h3>희망 일정 정하기</h3><p>예약자 이름, 원하는 날짜와 시간,<br>시술 내용을 준비해 주세요.</p></article>
+        <article><span class="step-number">02</span><h3>이메일로 문의하기</h3><p>아래 양식으로 문의 메일을 작성하거나<br>이메일을 직접 보내 주세요.</p></article>
+        <article><span class="step-number">03</span><h3>확정 회신 확인하기</h3><p>예약 가능 여부를 확인해 답장드립니다.<br>확정 안내를 받으면 예약 완료입니다.</p></article>
+      </div>
+      <div class="notice"><span class="notice-icon" aria-hidden="true">i</span><p>하루에 한 분만 예약을 받습니다. 이미 예약된 날짜에는 시간대가 달라도 추가 예약이 어렵습니다.</p></div>
+    </section>
+    <section id="inquiry" class="inquiry-section" aria-labelledby="inquiry-title">
+      <div class="wrap inquiry-grid">
+        <div class="inquiry-copy"><p class="eyebrow">YOUR NEXT VISIT</p><h2 id="inquiry-title">어떤 날에<br>만나 뵐까요?</h2><p>희망 일정을 남겨주세요.<br>문의 내용을 담은 이메일을 준비해 드립니다.</p><div class="email-box"><span>예약 문의 이메일</span><a href="mailto:sandboxwork@proton.me">sandboxwork@proton.me <span aria-hidden="true">↗</span></a></div><p class="small-note">메일 발송 후, 예약 확정 회신을 확인해 주세요.<br>양식 작성만으로 예약이 확정되지는 않습니다.</p></div>
+        <div class="form-card">
+          <noscript><p class="notice">이메일로 이름, 희망 날짜·시간, 시술 내용을 보내 주세요: <a href="mailto:sandboxwork@proton.me">sandboxwork@proton.me</a></p></noscript>
+          <form id="booking-form">
+            <div class="form-head"><h3>예약 문의 작성</h3><span>모든 필수 항목을 입력해 주세요</span></div>
+            <div class="fields">
+              <div class="field"><label for="guest-name">이름 <span aria-hidden="true">*</span></label><input id="guest-name" name="guestName" autocomplete="name" maxlength="60" placeholder="예약자 이름" required></div>
+              <div class="field"><label for="guest-email">이메일 <span aria-hidden="true">*</span></label><input id="guest-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="회신받을 이메일" required></div>
+              <div class="field"><label for="visit-date">희망 날짜 <span aria-hidden="true">*</span></label><input id="visit-date" name="date" type="date" required></div>
+              <div class="field"><label for="visit-time">희망 시간 <span aria-hidden="true">*</span></label><input id="visit-time" name="time" type="time" required></div>
+              <div class="field full"><label for="service">시술 내용 <span aria-hidden="true">*</span></label><select id="service" name="service" required><option value="" disabled selected>원하는 시술을 선택해 주세요</option><option>커트</option><option>염색</option><option>기타 시술 상담</option></select></div>
+              <div class="field full"><label for="message">추가 요청 <span class="optional">선택</span></label><textarea id="message" name="message" rows="3" maxlength="1000" placeholder="원하는 스타일이나 담당 선생님이 있다면 알려주세요."></textarea></div>
+            </div>
+            <button class="button primary submit" type="submit">문의 메일 만들기 <span aria-hidden="true">↗</span></button>
+            <p class="form-note">입력 내용은 이 페이지에 저장되지 않습니다.<br>다음 단계에서 내용을 확인하고 이메일로 보내 주세요.</p>
+          </form>
+          <section id="email-preview" class="preview" hidden aria-labelledby="preview-title">
+            <p class="eyebrow">READY TO SEND</p><h3 id="preview-title" tabindex="-1">문의 메일이 준비됐어요.</h3><p>내용을 확인한 후 메일 앱에서 보내 주세요.</p>
+            <label class="sr-only" for="email-body">작성된 문의 내용</label><textarea id="email-body" rows="10" readonly></textarea>
+            <a id="send-email" class="button primary" href="mailto:sandboxwork@proton.me">메일 앱에서 열기 <span aria-hidden="true">↗</span></a>
+            <div class="preview-tools"><button id="copy-email" class="text-button" type="button">문의 내용 복사</button><button id="edit-email" class="text-button" type="button">내용 수정하기</button></div>
+            <p class="form-note">메일 앱이 열리지 않으면 내용을 복사해<br><a href="mailto:sandboxwork@proton.me">sandboxwork@proton.me</a>로 직접 보내 주세요.</p>
+          </section>
+          <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="faq wrap section" aria-labelledby="faq-title">
+      <div class="section-heading"><p class="eyebrow">GOOD TO KNOW</p><h2 id="faq-title">방문 전에 확인해 주세요.</h2></div>
+      <div class="faq-list">
+        <details><summary>메일을 보내면 바로 예약되나요?<span aria-hidden="true">+</span></summary><p>문의 메일을 보낸 후 예약 확정 회신을 받아야 예약이 완료됩니다. 희망 날짜가 이미 예약되어 있으면 다른 일정을 안내드립니다.</p></details>
+        <details><summary>예약을 변경하거나 취소하고 싶어요.<span aria-hidden="true">+</span></summary><p>예약 확정 메일에 회신해 주세요. 예약자 이름과 기존 일정을 적고, 변경을 원하시면 새로운 희망 날짜와 시간을 함께 알려주세요.</p></details>
+        <details><summary>담당 선생님을 지정할 수 있나요?<span aria-hidden="true">+</span></summary><p>문의 메일의 추가 요청에 원하는 선생님을 적어 주세요. 담당 가능 여부를 확인한 뒤 답장으로 안내드립니다.</p></details>
+        <details><summary>시술이나 가격이 궁금해요.<span aria-hidden="true">+</span></summary><p>원하는 시술과 궁금한 점을 이메일로 문의해 주세요. 구체적인 내용은 회신을 통해 확인하실 수 있습니다.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">s.</span><span>SALON<span class="brand-sub">예약 안내</span></span></a><p>당신의 다음 방문을 기다립니다.</p><a href="mailto:sandboxwork@proton.me">이메일 문의 <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
